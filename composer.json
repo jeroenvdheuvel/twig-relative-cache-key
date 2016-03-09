@@ -1,0 +1,32 @@
+{
+  "name": "jeroenvdheuve/twig-cache-key-bundle",
+  "description": "Modifies the twig cache key, to make the cache key the same across multiple directories.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "keywords": [
+    "twig relative cache key",
+    "cache",
+    "cache key"
+  ],
+  "authors": [
+    {
+      "name": "Jeroen van den Heuvel",
+      "email": "jeroen.van.den.heuvel@werkspot.nl"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "symfony/twig-bundle": "~2.7|~3.0",
+    "symfony/config": "~2.3|~3.0",
+    "symfony/dependency-injection": "~2.3|~3.0",
+    "symfony/http-kernel": "~2.3|~3.0",
+    "symfony/yaml": "~2.3|~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.4|~5"
+  },
+  "autoload": {
+    "psr-4": { "jvdh\\TwigRelativeCacheKeyBundle\\": "" }
+  },
+  "minimum-stability": "stable"
+}

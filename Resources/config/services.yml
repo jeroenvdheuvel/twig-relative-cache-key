@@ -1,0 +1,12 @@
+parameters:
+  jvdh.twig_relative_cache_key_loader.class: jvdh\TwigRelativeCacheKeyBundle\Loader\RelativeCacheKeyLoader
+
+services:
+    jvdh.twig_relative_cache_key_loader:
+        class: "%jvdh.twig_relative_cache_key_loader.class%"
+        arguments:
+            - "@twig.loader.filesystem"
+            - "%kernel.root_dir%"
+        public: false
+        tags:
+            - { name: "twig.loader", priority: 10 }
